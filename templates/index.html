@@ -1,7 +1,41 @@
 {% extends 'base.html' %} 
 
 
-{% block head%}Index {%endblock%}
+{% block head%}Task Master{%endblock%}
 
-{% block body%} <h1>Saying Hello</h1>
+{% block body%}
+<div class="content">
+    <h1>
+        Task Master
+    </h1>
+
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Added</th>
+            <th>Actions</th>            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td> <a href=""> Deletd </a>
+                <br>
+                <a href=""> Updated </a>
+            </td>
+        </tr>
+    </table>
+
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task ">
+    </form>
+
+
+</div>
+
+
+
+
+
+
 {%endblock%}
